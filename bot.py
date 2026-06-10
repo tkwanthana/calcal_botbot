@@ -65,7 +65,7 @@ def calc_targets(profile):
     w = profile.get("weight", 65)
     return {
         "calories": tdee,
-        "protein": round(w * 1.8),
+        "protein": round(w * 1.25),
         "carbs": round(tdee * 0.45 / 4),
         "fat": round(tdee * 0.25 / 9),
         "sodium": 2300,
